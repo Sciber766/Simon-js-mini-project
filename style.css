@@ -16,6 +16,8 @@ h1{
 }
 body{
     background-color: gainsboro;
+    display: flex;
+    justify-content: center;
 }
 .score{
     position: absolute;
@@ -25,20 +27,6 @@ body{
     border-radius: 40px;
     top: 5.6rem;
     right: 5rem;
-}
-@media (max-width: 820px){
-    .score{
-        right: auto;
-        top: 5rem;
-        padding: 8px;
-        font-size: 1rem;
-    }
-    .box{
-        border-top: 130px solid var(--red-color);
-        border-left: 130px solid var(--green-color);
-        border-right: 130px solid var(--purple-color);
-        border-bottom: 130px solid var(--yellow-color);
-    }
 }
 .container{
     display: flex;
@@ -133,5 +121,82 @@ h3{
         border-left: 130px solid var(--green-color);
         border-right: 130px solid var(--purple-color);
         border-bottom: 130px solid var(--yellow-color);
+    }
+}
+
+/* help page part */
+.containerHelp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: gainsboro;
+    height: 100vh;
+    width: 100%;
+    gap: 30px;
+}
+.instructions{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(198, 100%, 26%);
+    color: whitesmoke;
+    padding: 15px;
+    border-radius: 40px;
+    width: 700px;
+    height: 85vh;
+    overflow-y: auto;
+    position: relative;
+    top: 40px;
+    text-align: center;
+}
+.instructions h2{
+    font-size: 2rem;
+    margin: 10px;
+}
+.instructions a{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: rgb(39, 248, 196);
+    margin: 10px;
+}
+.instructions a:hover{
+    color: rgb(0, 191, 194);
+    text-decoration: underline solid rgb(0, 191, 194);
+}
+.list{
+    text-align: start;
+}
+.tips{
+    text-align: start;
+}
+@media (max-width: 900px){
+    .score{
+        right: auto;
+        top: 5rem;
+        padding: 8px;
+        font-size: 1rem;
+    }
+    .box{
+        border-top: 130px solid var(--red-color);
+        border-left: 130px solid var(--green-color);
+        border-right: 130px solid var(--purple-color);
+        border-bottom: 130px solid var(--yellow-color);
+    }
+    .instructions{
+        width: 95%;
+        border-radius: 0;
+        height: 90vh;
+        padding: 10px;
+        justify-content: start;
+    }
+    .heading{
+        color: hsl(198, 100%, 26%);
+        position: absolute;
+        top: 15px;
+        text-align: center;
+        z-index: 2;
+        margin: 0;
     }
 }
