@@ -33,13 +33,10 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: gainsboro;
+    background-color: #e7e7e7;
     height: 100vh;
     width: 100%;
     gap: 30px;
-}
-h3{
-
 }
 .box{
     display: flex;
@@ -130,10 +127,9 @@ h3{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: gainsboro;
+    background-color: #3779b3;
     height: 100vh;
     width: 100%;
-    gap: 30px;
 }
 .instructions{
     display: flex;
@@ -142,10 +138,11 @@ h3{
     align-items: center;
     background-color: hsl(198, 100%, 26%);
     color: whitesmoke;
+    box-shadow:0 0 10px 5px #0000006b;
     padding: 15px;
     border-radius: 40px;
     width: 700px;
-    height: 85vh;
+    height: 80vh;
     overflow-y: auto;
     position: relative;
     top: 40px;
@@ -171,6 +168,9 @@ h3{
 .tips{
     text-align: start;
 }
+.heading{
+    color: #ededed;
+}
 @media (max-width: 900px){
     .score{
         right: auto;
@@ -192,7 +192,7 @@ h3{
         justify-content: start;
     }
     .heading{
-        color: hsl(198, 100%, 26%);
+        color: #ededed;
         position: absolute;
         top: 15px;
         text-align: center;
